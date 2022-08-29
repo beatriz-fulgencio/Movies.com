@@ -1,0 +1,654 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+/**/
+
+
+.title {
+    padding: 2%;
+    text-align: center;
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+a {
+    text-decoration: none !important;
+    color: beige;
+}
+
+
+/*Navegador*/
+.nav {
+    justify-content: end;
+    text-align: center;
+}
+
+.link {
+    color: #701717;
+}
+
+.navbar {
+    background-color: rgba(255, 252, 247, 0.88);
+    align-items: center;
+}
+
+.nav-item {
+    margin: 20px;
+    align-self: center;
+    text-align: center;
+}
+
+
+.navegador-btn {
+    box-sizing: border-box;
+    width: 135px;
+    height: 43px;
+    border: 2px solid rgba(255, 110, 74, 0.553);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+    border-radius: 9px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #363C54;
+}
+
+/*-----*/
+.nav-all {
+    background-color: rgba(255, 252, 247, 0.88);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 2;
+
+}
+
+.navbar-nav {
+    justify-content: flex-end;
+    background-color: rgba(255, 252, 247, 0.88);
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20px;
+
+}
+
+.navbar-logo {
+    justify-self: left;
+    margin: 10px;
+}
+
+.navbar-ul {
+    display: flex;
+    float: right;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nav-li-item {
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    display: none;
+}
+
+
+@media screen and (max-width:1012px) and (min-width:952px) {
+
+    .nav-all {
+
+        top: 0px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .navbar-logo {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .navbar-nav {
+        display: absolute;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width:952px) {
+    .nav-all {
+        top: 0px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .navbar-logo {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        height: 100%;
+        justify-content: end;
+    }
+
+    .navbar-nav~.checkbtn {
+        display: flex;
+        align-items: flex-end;
+        justify-content: end;
+    }
+
+    .navbar-ul {
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .nav-li-item {
+        display: block;
+        width: 100%;
+    }
+
+    .checkbtn {
+        display: block;
+        color: #001A3F;
+        width: 50px;
+        height: inherit;
+        text-align: right;
+        right: 50px;
+        line-height: 50px;
+        z-index: 3;
+        float: right;
+        font-size: xx-large;
+    }
+
+    .navv {
+        display: none;
+    }
+
+
+    #check:checked~label i:nth-child(2) {
+        display: block;
+    }
+
+    #check:checked~label i:nth-child(1) {
+        display: none;
+    }
+
+    #check:checked~.nav {
+        display: block;
+    }
+
+    #check:not(checked)~.nav {
+        height: 0%;
+    }
+
+    #check:not(checked)~label i:nth-child(1) {
+        display: block;
+    }
+
+    #check:not(checked)~label i:nth-child(2) {
+        display: none;
+    }
+
+}
+
+
+
+/*Lançamentos*/
+
+
+
+/*Filmes no cinema*/
+
+.container-filmes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.card-filmes {
+    border-radius: 8px;
+    margin: 5px;
+    background-color: rgba(193, 89, 89, 0.439);
+    justify-items: left;
+    max-height: min-content;
+    display: grid;
+    width: 540px;
+}
+
+.maisdet {
+    font-size: small;
+    border: #FF0000;
+    color: aliceblue;
+    grid-row: 5;
+    grid-column: 3/4;
+}
+
+.corpo-card {
+    grid-row: 1/5;
+    grid-column: 3/4;
+    margin: 10px;
+    width: 290px;
+}
+
+.titulo-card {
+    font-weight: bold;
+    grid-row: 1;
+    grid-column: 3/4;
+}
+
+.img-card {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    grid-column: 1/3;
+    grid-row: 1/5;
+    margin-right: 10px;
+    max-width: 220px;
+
+}
+
+.data {
+    font-size: small;
+    margin: 0;
+    grid-row: 4;
+    grid-column: 3/4;
+}
+
+.card-texto {
+    grid-row: 3;
+    grid-column: 3/4;
+    max-width: 330px;
+}
+
+.btn {
+    color: rgb(255, 236, 236);
+    font-weight: bold;
+    background: linear-gradient(180deg, #FF0000 0%, #E9C867 100%);
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    border: #FF0000;
+}
+
+
+.cinema {
+    background: conic-gradient(from 180deg at 50% 50%, #FE8178 0deg, #F0F368 268.13deg, #FE8178 360deg);
+    padding-bottom:30px;
+}
+
+@media screen and (max-width:585px){
+    h1{
+        font-weight: bolder;
+        font-size: xx-large;
+    }
+    .container-filmes{
+        justify-content: space-around;
+    }
+    .card-filmes{
+        max-width: 18rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .img-card {
+        border-radius: 8px;
+        align-self: center;
+        margin-top: 10%;
+    }
+    
+}
+
+@media screen and (max-width:1198px){
+    .container-filmes{
+        justify-content: space-around;
+    }   
+}
+/**/
+/*Principais filmes*/
+.principais {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.card-princip {
+    border-radius: 16px;
+    margin: 5px;
+    border-color: #ff000000;
+    background-color: #ff6a0019;
+    justify-items: left;
+}
+
+.img-princip {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.title-filme {
+    font-weight: bold;
+}
+
+/**/
+
+.foot{
+    padding: 30px;
+}
+footer {
+    background: linear-gradient(180deg, #FFBCBC 0%, rgba(255, 208, 208, 0) 100%);
+}
+
+/*Mobile*/
+@media screen and (max-width: 844px) {
+
+    .title {
+        padding: 25px;
+    }
+
+    .nav-link {
+
+        align-content: center;
+    }
+
+    .principais{
+        align-content: center;
+    }
+
+    header {
+        margin: 0%;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .cards {
+        align-items: center;
+    }
+
+    .card {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .film {
+        padding: 30px;
+    }
+
+    .btn {
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        margin: 20px;
+        font-size: larger;
+        align-content: center;
+    }
+
+    .text-novidades {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .imagem {
+        grid-column: 1/12;
+        grid-row: 1;
+        padding: 10px;
+        align-items: center;
+    }
+
+    h4 {
+        grid-column: 1/12;
+        grid-row: 2;
+
+    }
+
+    p {
+        grid-column: 1/12;
+        grid-row: 3;
+    }
+
+}
+
+/**/
+
+
+
+
+/*BUSCA*/
+.fundo {
+    background: conic-gradient(from 180deg at 50% 50%, rgba(255, 0, 0, 0.208) 0deg, rgba(231, 235, 0, 0.216) 180deg, rgba(255, 0, 0, 0.183) 360deg);
+    padding: 20px;
+}
+
+.busca-form {
+    margin: 30px;
+}
+
+.container-artigo-busca {
+    display: grid;
+    background: #701717;
+    border-radius: 16px;
+    margin: 30px 50px;
+    /* grid-template-columns: repeat(10, 1fr); */
+    padding: 10px;
+    line-height: 23px;
+    color: #ffffff;
+
+}
+
+.text-busca{
+    grid-column: 3/10;
+    grid-row:1/4 ;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+}
+
+.img-busca {
+    grid-column: 1/3;
+    grid-row: 1/4;
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    width:200px;
+
+}
+
+.title-busca {
+    
+    grid-row: 1;
+    padding-top: 10px;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.resumo-busca {
+    
+    grid-row: 2;
+    margin: 0 5px;
+    color: #FFF1F1;
+    font-style: italic;
+
+}
+
+.maisdet-busca{
+    
+    width: fit-content;
+    max-width: 150px;
+    justify-content: center;
+    text-align: justify;
+    margin: 10px;
+    align-items: center;
+    /* max-height: 30px; */
+}
+
+.tags-busca {
+    
+    grid-row: 3;
+    display: flex;
+}
+
+.tag-3 {
+    background: #FFD540;
+    border-radius: 5px;
+    padding: 10px;
+    align-self: center;
+    width: fit-content;
+    max-width: 150px;
+    justify-content: center;
+    text-align: justify;
+    margin: 10px;
+}
+
+
+@media screen and (max-width:952px) {
+    .img-busca {
+        text-align: center;
+        grid-column: all;
+        grid-row: 1;
+        justify-content: space-around;
+    }
+
+    
+.text-busca{
+    grid-column:all;
+    grid-row:2 ;
+}
+    /* .title-busca {
+        grid-column: all;
+        grid-row: 2;
+        
+    }
+
+    .resumo-busca {
+        grid-column: all;
+        grid-row: 3;
+    }
+
+    .maisdet-busca{
+        grid-column: all;
+        grid-row: 4;
+    } */
+
+    .container-artigo-busca img {
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:420px) {
+    .container-artigo-busca{
+        justify-content: space-around;
+    }
+
+    .img-busca{
+        width: 150px;
+        text-align: center;
+        grid-column: all;
+        grid-row: 1;
+        justify-content: space-around;
+    }
+    .d-flex{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .btn-busca{
+        text-align: center;
+        justify-content: center;
+    }
+
+}
+
+/*Detalhes*/
+.grid-detalhes{
+    background: linear-gradient(180deg, #810000  0%, #ff5e008c 100%);  
+    display: grid;
+    color: #FFF1F1;
+    padding: 30px;
+}
+
+.img-filme{
+    border-radius: 16px;
+    grid-column: 1/3;
+    grid-row: 1;
+    margin-right: 20px;
+    width: 220px;
+}
+.texto-detalhes{
+    grid-column: 3/12;
+    grid-row: 1;
+}
+
+.titulo-filme{
+    font-weight: bolder;
+    
+}
+.frase-filme{
+    color: #FFBCBC;
+    font-style: italic;
+}
+.linha{
+    display: flex;
+    gap: 20px;
+}
+
+.detalhacao{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-detalha{
+    border-radius: 8px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #ffbcbc52;
+     width: 120px;
+     margin: 20px;
+     align-items: center;
+     padding: 5px;
+     gap: 5px;
+}
+
+@media screen and (max-width:754px){
+    .grid-detalhes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .img-filme{
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+    
+}
