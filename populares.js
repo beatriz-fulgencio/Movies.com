@@ -23,7 +23,7 @@ const populares = (data) =>{
             <h5 class="card-title title-filme">${filme.title}</h5>
             <p class="card-text data">${data.toLocaleDateString ()}</p>
             <p class="card-text categoria">${geners}</p>
-            <a href="/detalhes.html?id=${filme.id}" class="btn btn-primary maisdet">+ Detalhes</a>
+            <a href="/Movies.com/detalhes.html?id=${filme.id}" class="btn btn-primary maisdet">+ Detalhes</a>
         </div>
     </div>
     `
