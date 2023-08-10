@@ -23,7 +23,7 @@ const cinema = (data) => {
             <p class="categoria">${geners} </p>
             <p class="card-texto">${filmes.original_title}</p>
             <p class="data">${data.toLocaleDateString ()}</p>
-            <a href="/detalhes.html?id=${filmes.id}" class="btn btn-primary maisdet">+ Detalhes</a>
+            <a href="/Movies.com/detalhes.html?id=${filmes.id}" class="btn btn-primary maisdet">+ Detalhes</a>
         </div>
     </div>
     `}

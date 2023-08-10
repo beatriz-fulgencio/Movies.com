@@ -23,7 +23,7 @@ function exibePesquisa (){
         <h3 class="title-busca" id="title-artigo"> ${filmes.title}</h3>
         <p>Data de lançamento:${data.toLocaleDateString ()}</p>
         <p class="resumo-busca"> ${filmes.overview}</p>
-        <a href="/detalhes.html?id=${filmes.id}" class="btn btn-primary maisdet maisdet-busca">+ Detalhes</a>
+        <a href="/Movies.com/detalhes.html?id=${filmes.id}" class="btn btn-primary maisdet maisdet-busca">+ Detalhes</a>
         </div>
     </div>
         `

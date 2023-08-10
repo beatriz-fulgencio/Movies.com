@@ -1,42 +1,4 @@
-/*var generos = [];
 
-function converteGenero(array) {
-    let string = "";
-    // console.log(generos.genres.length)
-    //console.log(generos)
-    for (i = 0; i < array.length; i++) {
-
-        for (u = 0; u < generos.genres.length; u++) {
-
-            if (array[i] == generos.genres[u].id) {
-
-                if (string == "") {
-                    string += generos.genres[u].name;
-                } else {
-                    string += ", " + generos.genres[u].name;
-                }
-            }
-        }
-    }
-    return string;
-}
-
-
-const salvaGenero = (data) => {
-    let resposta = JSON.parse(data.target.response);
-    //  console.log(resposta);
-    generos = resposta;
-}
-
-const genre = () => {
-    let xhr4 = new XMLHttpRequest();
-    let url = `https://api.themoviedb.org/3/genre/movie/list?api_key=d16c8ae735142a7d406b7bd38c1b308b&language=pt-BR`
-    xhr4.onload = salvaGenero;
-    xhr4.open('GET', url, true)
-    xhr4.send();
-
-}
-*/
 
 const detalhesfunction = () => {
     const params = new URLSearchParams(location.search)
